@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com" name="github"/>
+
+  <!-- Default use yocto fido branch -->
+  <default sync-j="4" revision="master"/>
+
+  <!-- yocto and openembedded -->
+  <project remote="yocto" revision="krogoth" name="poky" path="sources/poky"/>
+  <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <!-- raspberrypi -->
+  <project remote="yocto" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
+
+  <!-- Qt5 -->
+  <project remote="github" name="meta-qt5/meta-qt5" path="sources/meta-qt5"/>
+
+  <!-- Xilinx -->
+  <project remote="github" name="Xilinx/meta-xilinx" path="sources/meta-xilinx"/>
+
+  <!-- Our personal layers -->
+  <project remote="github" name="texierp/meta-estei" path="sources/meta-estei" />
+  
+</manifest>
+
