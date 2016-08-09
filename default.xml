@@ -16,13 +16,13 @@
   <project remote="yocto" name="meta-raspberrypi" path="sources/meta-raspberrypi"/>
 
   <!-- Qt5 -->
-  <project remote="github" name="meta-qt5/meta-qt5" path="sources/meta-qt5"/>
+  <project remote="github" revision="krogoth" name="meta-qt5/meta-qt5" path="sources/meta-qt5"/>
 
   <!-- Xilinx -->
   <project remote="github" name="Xilinx/meta-xilinx" path="sources/meta-xilinx"/>
 
   <!-- Our personal layers -->
-  <project remote="github" name="texierp/meta-estei" path="sources/meta-estei" />
+  <project remote="github" revision="master" name="texierp/meta-estei" path="sources/meta-estei" />
   
 </manifest>
 

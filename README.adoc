@@ -1,0 +1,32 @@
+= ESTEI BSP
+
+To get the BSP you need to have `repo` installed and use it as:
+
+Install the `repo` utility:
+
+[source,console]
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$: chmod a+x ~/bin/repo
+
+Download the BSP source:
+
+[source,console]
+$: PATH=${PATH}:~/bin
+$: mkdir estei-bsp
+$: cd estei-bsp
+$: repo init -u https://github.com/texierp/yocto-bsp-manifest -b master
+$: repo sync
+
+At the end of the commands you have every metadata you need to start work with.
+
+To start a simple image build (QEMU base image):
+
+[source,console]
+$: source poky/oe-init-build-env estei-build 
+$: export TEMPLATECONF=meta-estei/conf 
+$: MACHINE=qemux86-64 bitbake estei-qt-image
+$: runqemu qemux86-64 qt-image
+
+
+
