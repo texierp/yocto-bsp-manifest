@@ -23,10 +23,10 @@ At the end of the commands you have every metadata you need to start work with.
 To start a simple image build (QEMU base image):
 
 [source,console]
-$: source poky/oe-init-build-env estei-build 
 $: export TEMPLATECONF=meta-estei/conf 
-$: MACHINE=qemux86-64 bitbake estei-qt-image
-$: runqemu qemux86-64 qt-image
+$: source poky/oe-init-build-env estei-build 
+$: MACHINE=qemuarm bitbake estei-qt-image
+$: runqemu qemuarm-64 qt-image
 
 
 
