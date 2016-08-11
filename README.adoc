@@ -26,7 +26,7 @@ To start a simple image build (QEMU base image):
 $: export TEMPLATECONF=meta-estei/conf 
 $: source poky/oe-init-build-env estei-build 
 $: MACHINE=qemuarm bitbake estei-qt-image
-$: runqemu qemuarm-64 qt-image
+$: runqemu qemuarm qt-image
 
 
 
