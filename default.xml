@@ -19,7 +19,7 @@
   <project remote="github" revision="krogoth" name="meta-qt5/meta-qt5" path="sources/meta-qt5"/>
 
   <!-- Xilinx -->
-  <project remote="github" name="Xilinx/meta-xilinx" path="sources/meta-xilinx"/>
+  <project remote="github" revision="krogoth" name="Xilinx/meta-xilinx" path="sources/meta-xilinx"/>
 
   <!-- Our personal layers -->
   <project remote="github" revision="master" name="texierp/meta-estei" path="sources/meta-estei" />
