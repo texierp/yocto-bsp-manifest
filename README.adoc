@@ -29,5 +29,7 @@ $: source poky/oe-init-build-env estei-build
 $: MACHINE=qemuarm bitbake estei-qt-image
 $: runqemu qemuarm qt-image
 
+image::img/qemu_estei.png[]
+
 
 
