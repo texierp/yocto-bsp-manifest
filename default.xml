@@ -5,7 +5,7 @@
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com" name="github"/>
 
-  <!-- Default use yocto fido branch -->
+  <!-- Default use yocto master branch -->
   <default sync-j="4" revision="master"/>
 
   <!-- yocto and openembedded -->
@@ -20,6 +20,9 @@
 
   <!-- Xilinx -->
   <project remote="github" revision="krogoth" name="Xilinx/meta-xilinx" path="sources/meta-xilinx"/>
+  
+  <!-- chip -->
+  <project remote="github" revision="master" name="texierp/meta-chip" path="sources/meta-chip"/>
 
   <!-- Our personal layers -->
   <project remote="github" revision="master" name="texierp/meta-estei" path="sources/meta-estei" />
