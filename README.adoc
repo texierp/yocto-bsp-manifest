@@ -32,4 +32,13 @@ $: runqemu qemuarm qt-image
 image::img/qemu_estei.png[]
 
 
+SD Card Creation:
+
+[source,console]
+$: source poky/oe-init-build-env estei-build/
+$: wic list images
+$: wic create sdimage-xilinx -e esteu-qt-image
+$: wic create sdimage-xilinx -e estei-qt-image
+$: cd /var/tmp/wic/build/boot/
+$: sudo dd if=sdimage-xilinx-201609282102-mmcblk.direct of=/dev/mmcblk0
 
