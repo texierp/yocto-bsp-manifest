@@ -38,6 +38,6 @@ SD Card Creation:
 $: source poky/oe-init-build-env estei-build/
 $: wic list images
 $: wic create sdimage-xilinx -e estei-qt-image
-$: cd /var/tmp/wic/build/boot/
+$: cd /var/tmp/wic/build/
 $: sudo dd if=sdimage-xilinx-201609282102-mmcblk.direct of=/dev/mmcblk0
 
